@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -32,11 +33,18 @@
             box-shadow: 0 16px 48px #E3E7EB;
             padding-top: 10px;
         }
+        .logo {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
     </style>
 
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
             <div class="container-fluid">
+                <!-- <div class="logo"><img src="{% static 'images/purple-logo.png' %}"></div> -->
                 <a class="navbar-brand" href="{% url 'home' %}">Django central</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
